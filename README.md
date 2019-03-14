@@ -1,3 +1,10 @@
 # Learning to Parse Json
 
-Within this project you will see my many attempts of learning how parsing works and how I effectively use parsing. (In this case with JSON files)
+This was made as a side project in order to correctly understand how the dart:convert library worked. You can see various attempts at making the program parse a JSON file in the commit history...
+
+## What I learned:
+    - Parsing is relatively straight forward
+    - The inner workings of the process of parsing (the 2 step: lexer and parser combo)
+    - "Correct"/"best" way to format a JSON for my needs
+    - Using a JSON as a database
+
