@@ -11,14 +11,6 @@ void main() {
 //------------------------------------------------------------------------ All arrays & variables that will be used
 
 List races;
-List ractraits;
-List rtdesc;
-List traits;
-List tdesc;
-String test;
-//------------------------------------------------------------------------ Fetches JSON and deals with anything related to it
-
-//------------------------------------------------------------------------
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -36,6 +28,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+//------------------------------------------------------------------------ Fetches JSON and deals with anything related to it
+
   Future<String> _loadjson() async {
     var response = await rootBundle.loadString('assets/data/HDARG.json');
 
@@ -50,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     super.initState();
     _loadjson();
   }
-
 //------------------------------------------------------------------------
   @override
   Widget build(BuildContext context) {
