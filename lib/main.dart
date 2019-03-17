@@ -6,7 +6,7 @@ import 'dart:convert';
 
 void main() {
   runApp(MyApp());
-  debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = false;
 }
 //------------------------------------------------------------------------ All arrays & variables that will be used
 
@@ -27,7 +27,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+class _MyHomePageState extends State<MyHomePage>{
 //------------------------------------------------------------------------ Fetches JSON and deals with anything related to it
 
   Future<String> _loadjson() async {
